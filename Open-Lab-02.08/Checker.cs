@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.ComponentModel.Design;
 
 namespace Open_Lab_02._08
 {
@@ -6,7 +7,13 @@ namespace Open_Lab_02._08
     {
         public bool IsEmpty(string str)
         {
-            throw new NotImplementedException();
-        }
+            if (string.IsNullOrEmpty(str))
+            {
+                return true;
+            }else
+            {
+                return false;
+            }
+        }  
     }
 }
